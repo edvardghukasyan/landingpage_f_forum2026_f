@@ -3,177 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conference Agenda</title>
+
+  <title>Agenda</title>
+
   <style>
-    * {
-      box-sizing: border-box;
+    html, body {
       margin: 0;
       padding: 0;
-    }
-
-    body {
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f4f6fb;
-      color: #172033;
-      line-height: 1.6;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #123c69, #2a6f97);
-      color: white;
-      padding: 56px 20px 44px;
-      text-align: center;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 6px 14px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.18);
-      font-size: 14px;
-      margin-bottom: 18px;
-    }
-
-    .hero h1 {
-      font-size: clamp(32px, 6vw, 54px);
-      line-height: 1.1;
-      margin-bottom: 14px;
-    }
-
-    .hero p {
-      max-width: 680px;
-      margin: 0 auto;
-      font-size: 18px;
-      opacity: 0.92;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: -26px auto 48px;
-      padding: 0 18px;
-    }
-
-    .card {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
       background: white;
-      border-radius: 24px;
-      box-shadow: 0 16px 40px rgba(18, 60, 105, 0.12);
-      padding: 24px;
-      margin-bottom: 22px;
     }
 
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 14px;
-    }
-
-    .info-item {
-      background: #f7f9fc;
-      border-radius: 18px;
-      padding: 16px;
-    }
-
-    .info-item span {
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
       display: block;
-      color: #687385;
-      font-size: 13px;
-      margin-bottom: 4px;
-    }
-
-    .info-item strong {
-      font-size: 16px;
-    }
-
-    h2 {
-      font-size: 26px;
-      margin-bottom: 18px;
-    }
-
-    .agenda-item {
-      display: grid;
-      grid-template-columns: 120px 1fr;
-      gap: 18px;
-      padding: 18px 0;
-      border-bottom: 1px solid #edf0f5;
-    }
-
-    .agenda-item:last-child {
-      border-bottom: none;
-    }
-
-    .time {
-      font-weight: 700;
-      color: #2a6f97;
-    }
-
-    .agenda-title {
-      font-weight: 700;
-      font-size: 18px;
-      margin-bottom: 4px;
-    }
-
-    .agenda-meta {
-      color: #687385;
-      font-size: 15px;
-    }
-
-    .cta {
-      text-align: center;
-      background: #172033;
-      color: white;
-    }
-
-    .cta p {
-      color: #d7dce5;
-      margin-bottom: 18px;
-    }
-
-    .button {
-      display: inline-block;
-      text-decoration: none;
-      color: #172033;
-      background: white;
-      padding: 12px 22px;
-      border-radius: 999px;
-      font-weight: 700;
-    }
-
-    footer {
-      text-align: center;
-      color: #7b8493;
-      font-size: 14px;
-      padding: 30px 18px 42px;
-    }
-
-    @media (max-width: 620px) {
-      .agenda-item {
-        grid-template-columns: 1fr;
-        gap: 4px;
-      }
-
-      .hero {
-        padding-top: 42px;
-      }
     }
   </style>
 </head>
+
 <body>
-  <section class="hero">
-    <div class="badge">Conference Agenda</div>
-    <h1>Conference Name 2026</h1>
-    <p>Welcome to the official agenda page. Scan the QR code anytime to see the latest schedule, speakers, and session details.</p>
-  </section>
-
-  <main style="width:100vw;height:100vh;background:#ffffff;display:flex;align-items:center;justify-content:center;padding:0;margin:0;">
-    <iframe 
-      src="agenda.pdf" 
-      style="width:100%;height:100%;border:none;"
-      title="Conference Agenda PDF">
-    </iframe>
-  </main>
-
-  <footer>
-    © 2026 Conference Name. All rights reserved.
-  </footer>
+  <iframe src="agenda.pdf"></iframe>
 </body>
 </html>
